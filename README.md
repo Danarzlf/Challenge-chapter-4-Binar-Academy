@@ -21,7 +21,9 @@ npm run dev
 ```localhost:9000/home```
 
 ##  Entity Relationship Diagram
-<img src="/image/diagramdb.png">
+![ERD](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/diagramdb.png?raw=true)
+
+
 
 
 
