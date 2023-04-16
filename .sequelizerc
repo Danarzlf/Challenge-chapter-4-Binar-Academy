@@ -1,0 +1,15 @@
+//ini untuk ngebantu konfigurasi sequelize ke project kita 
+
+//ADA :
+// config: menentukan lokasi file konfigurasi Sequelize yang akan digunakan.
+// models-path: menentukan lokasi direktori yang berisi model Sequelize.
+// migrations-path: menentukan lokasi direktori yang berisi migrasi Sequelize.
+// seeders-path: menentukan lokasi direktori yang berisi seeders Sequelize.
+
+const path = require("path"); //Path tersebut adalah path absolut dari file .sequelizerc yang berisi pengaturan konfigurasi Sequelize. 
+
+module.exports = {
+    config: path.resolve('config', 'database.js')
+}
+
+

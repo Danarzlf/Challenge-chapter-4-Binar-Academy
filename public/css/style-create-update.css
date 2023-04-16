@@ -1,0 +1,177 @@
+/* Sidebar */
+#cars-page {
+    height: 100vh;
+}
+
+#side-bar {
+    background-color: #0D28A6;
+    color: white;
+    padding-top: 20px;
+}
+
+#cars {
+    height: 100%;
+}
+
+#top-nav {
+    background-color: white;
+}
+
+#cars-page #cars #side-bar .brand {
+    color: blue;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-stroke: 1px white;
+}
+
+#cars-page #cars #side-bar p span {
+    color: green;
+}
+
+
+#cars-page #cars #side-bar .col a p {
+    color: white;
+}
+
+
+#side-nav {
+    height: 90%;
+}
+
+#side-nav .col-2 {
+    padding: 0;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group {
+    border-radius: 0;
+}
+
+.list-group a {
+    color: #8A8A8A;
+}
+
+.list-group .active {
+    background-color: #CFD4ED;
+    color: black;
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    height: 88px;
+}
+
+
+.dropdown {
+    list-style: none;
+}
+
+.navbar .container-fluid .navbar-brand {
+    color: blue;
+    font-weight: bold;
+    font-size: 27px;
+    font-style: italic;
+}
+
+.navbar .container-fluid .navbar-brand span {
+    color: green;
+}
+
+.nav-link {
+    margin-top: -8px;
+}
+
+
+
+/* .list-name {
+    padding-top: 10px;
+}
+
+.list-name .container-fluid .row .col h2 {
+    font-size: 20px;
+}
+
+.list-name .container-fluid .row .col .btn {
+    background-color: #0D28A6;
+    color: white;
+    border-radius: 3px;
+} */
+
+
+/* CSS CREATE  */
+#content {
+    background-color: #E5E5E5;
+}
+
+#content .tab-content .tab-pane img {
+    width: 15px;
+    height: fit-content;
+}
+
+#top-ref {
+    gap: 10px;
+}
+
+#top-ref a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#top-ref .active {
+    text-decoration: none;
+    color: #222222;
+    font-weight: normal;
+}
+
+#content .input-create {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+
+
+#content .image-data {
+    margin-left: 296px;
+}
+
+
+
+
+.input-label {
+    width: 20%;
+}
+
+.input-field {
+    width: 50%;
+}
+
+.form-select {
+    display: block;
+}
+
+.btn-cancel {
+    border-color: #0D28A6;
+}
+
+.btn-save {
+    background-color: #0D28A6;
+    color: white;
+    border: none;
+}
+
+
+/* EDIT CSS  */

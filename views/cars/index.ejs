@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/image/logo-title.png" />
+    <title>Danar Rental</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style2.css">
+
+</head>
+
+<body>
+
+    <div id="cars-page" class="container-fluid">
+        <div id="cars" class="row">
+            <!-- side bar -->
+            <div id="side-bar" class="col-1 text-center">
+                <div>
+                    <p class="brand ">D<span>R</span></p>
+                </div>
+                <div class="col text-center">
+                    <a href="/home">
+                        <img src="/image/fi_home.png" alt="home">
+                        <p>Dashboard</p>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a href="/admin/cars">
+                        <img src="/image/fi_truck.png" alt="fi_truck">
+                        <p>Cars</p>
+                    </a>
+                </div>
+            </div>
+            <!-- side bar -->
+
+
+
+            <div class="col-11">
+                <!-- navbar -->
+                <%- include("../partials/navigation") %>
+                    <!-- end-navbar -->
+
+                    <!-- main -->
+                    <div id="side-nav" class="row">
+                        <div class="col-2">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action" id="list-home-list"
+                                    data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">CARS</a>
+                                <a class="list-group-item list-group-item-action active" id="list-profile-list"
+                                    data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">List
+                                    Cars</a>
+                            </div>
+                        </div>
+
+
+
+                        <!-- content -->
+                        <div id="content" class="col-10">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade" id="list-home" role="tabpanel"
+                                    aria-labelledby="list-home-list">
+                                    <h1 class="ms-4 mt-5">CARS</h1>
+                                    <%- include("../partials/cars") %>
+                                </div>
+                                <div class="tab-pane fade show active" id="list-profile" role="tabpanel"
+                                    aria-labelledby="list-profile-list">
+                                    <!-- carlist  -->
+                                    <div id="top-ref" class="mx-3 my-4 d-flex align-items-center align-center">
+                                        <a href="#" class="ms-2">Cars</a>
+                                        <img src="/image/chevron-right.svg" alt=""
+                                            style="width: 15px; height: fit-content;">
+                                        <a class="active" href="#">List Car</a>
+                                    </div>
+
+                                    <div class="mb-3 d-flex justify-content-between">
+                                        <h2 class="ms-4">List Car</h2>
+                                        <a href="/admin/cars/create"
+                                            class="btn btn-primary btn-add d-flex align-items-center me-4">
+                                            <img class="icon" src="/image/fi_plus.svg" alt="fi_plus">
+                                            Add New Car
+                                        </a>
+                                    </div>
+
+
+                                    <div class="filter ms-3">
+                                        <a href="/admin/cars">
+                                            <button class="btn btn-outline-primary fw-bold">All</button>
+                                        </a>
+                                        <a href="/admin/cars?ukuran=Small">
+                                            <button class="btn btn-outline-primary fw-bold">Small</button>
+                                        </a>
+                                        <a href="/admin/cars?ukuran=Medium">
+                                            <button class="btn btn-outline-primary fw-bold">Medium</button>
+                                        </a>
+                                        <a href="/admin/cars?ukuran=Large">
+                                            <button class="btn btn-outline-primary fw-bold">Large</button>
+                                        </a>
+                                    </div>
+
+                                    <div id="cars-card" class="row row-cols-1 row-cols-md-3 g-4 m-2">
+                                        <% cars.map((car)=> { %>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="<%= car.imageURL %>" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <p>
+                                                            <%= car.name %>
+                                                        </p>
+                                                        <h5 class="card-title rent-view">
+                                                            Rp <%= car.sewa.toLocaleString('id-ID') %> / hari
+                                                        </h5>
+                                                        <div class="d-flex flex-row card-clock my-3">
+                                                            <img class="icon" src="/image/fi_clock.svg" alt="">
+                                                            <p class="card-text time-view">Updated at
+                                                                <%= new Date(car.updatedAt).toLocaleString('id-ID',
+                                                                    {day: 'numeric' , month: 'long' , year: 'numeric' ,
+                                                                    hour: 'numeric' , minute: 'numeric' , hour12:
+                                                                    false}).replace('pukul', ',' ) %>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex p-2">
+
+
+
+                                                        <form action="/cars/delete/<%= car.id %>" method="post">
+                                                            <button class="btn-delete btn  fw-bold me-2 ">
+                                                                Delete
+                                                            </button>
+                                                        </form>
+
+                                                        <a href="/admin/cars/edit/<%= car.id %>">
+                                                            <button class="btn-edit btn fw-bold ms-2">
+                                                                Edit
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <% }); %>
+                                    </div>
+
+                                    <!-- carlist  -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end content -->
+                    </div>
+                    <!-- end main -->
+            </div>
+        </div>
+
+
+        <!-- Panggil jQuery terlebih dahulu -->
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+        <!-- Panggil file JavaScript Bootstrap -->
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

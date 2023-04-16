@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+
+#home {
+    margin-top: 250px;
+    padding: 100px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+}
+
+#home .container .row .col h1 p {
+    color: blue;
+    font-weight: 800;
+    font-size: 40px;
+    font-style: italic;
+    -webkit-text-stroke: 1px white;
+}
+
+#home .container .row .col h1 p span {
+    color: green;
+}

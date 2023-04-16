@@ -1,0 +1,25 @@
+<div id="cars-card" class="row row-cols-1 row-cols-md-3 g-4 m-2">
+    <% cars.map((car)=> { %>
+        <div class="col">
+            <div class="card">
+                <img src="<%= car.imageURL %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>
+                        <%= car.name %>
+                    </p>
+                    <h5 class="card-title rent-view">
+                        Rp <%= car.sewa.toLocaleString('id-ID') %> / hari
+                    </h5>
+                    <div class="d-flex flex-row card-clock my-3">
+                        <img class="icon" src="/image/fi_clock.svg" alt="">
+                        <p class="card-text time-view">Updated at
+                            <%= new Date(car.updatedAt).toLocaleString('id-ID', {day: 'numeric' , month: 'long' ,
+                                year: 'numeric' , hour: 'numeric' , minute: 'numeric' , hour12:
+                                false}).replace('pukul', ',' ) %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }); %>
+</div>
