@@ -18,7 +18,7 @@ npm run dev
 
 ## Start Page
 ```localhost:9000/home```
-![homepage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage.png?raw=true)
+![homepage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/startpage.png?raw=true)
 
 
 ##  Entity Relationship Diagram
