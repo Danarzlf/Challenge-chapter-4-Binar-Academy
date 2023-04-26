@@ -16,9 +16,23 @@ npm run start
 npm run dev
 ```
 
-## Start Page
+## Start / First Page
 ```localhost:9000/home```
-![homepage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/startpage.png?raw=true)
+![startpage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/startpage.png?raw=true)
+
+
+## HomePage Page
+List Car
+![homepage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage.png?raw=true)
+
+Cars
+![homepage2](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage2.png?raw=true)
+
+## Add Car Page
+![addcar](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/addcar.png?raw=true)
+
+## Edit Car Page
+![editcar](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/editcar.png?raw=true)
 
 
 ##  Entity Relationship Diagram
