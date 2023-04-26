@@ -24,9 +24,10 @@ npm run dev
 ## HomePage Page
 List Car
 ![homepage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage.png?raw=true)
+![homepage2](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage2.png?raw=true)
 
 Cars
-![homepage2](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/homepage2.png?raw=true)
+![cars](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/cars.png?raw=true)
 
 ## Add Car Page
 ![addcar](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/addcar.png?raw=true)
