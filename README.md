@@ -15,7 +15,7 @@ npm run start
 ```
 npm run dev
 ```
-
+ 
 ## Start / First Page
 ```localhost:9000/home```
 ![startpage](https://github.com/Danarzlf/Challenge-chapter-4-Binar-Academy/blob/main/public/image/startpage.png?raw=true)
